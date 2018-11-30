@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">CRAO</string>
+    <string name="nombre">Nombre</string>
+    <string name="correoElectronico">Correo Electronico</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="login_error_vacio">Los campos no pueden estar vacios</string>
+    <string name="login_error_contraseña">Las contraseñas no coinciden</string>
+    <string name="register_error_alphabetic">Solo caracteres alfabéticos</string>
+    <string name="register_error_alphanumeric">Solo caracteres alfanuméricos</string>
+    <string name="login_error">El correo o la contraseña son incorrectos</string>
+    <string name="login_error_longitud">Longitud incorrecta</string>
+    <string name="nombreRestaurante">Nombre del restaurante</string>
+    <string name="list_restaurante_exit">Cerrar sesión</string>
+    <string name="list_restaurante_crear">Registrar nuevo restaurante</string>
+    <string name="list_restaurante_info">Informacion de los restaurantes</string>
+    <string name="tipoRestaurante">Tipo de restaurante</string>
+    <string name="descripcionRestaurante">Descripcion del restaurante</string>
+    <string name="crear">Crear</string>
+    <string name="borrarRestaurante">Borrar restaurante</string>
+    <string name="Register_error_contraseña">Las contraseñas son diferentes</string>
+</resources>

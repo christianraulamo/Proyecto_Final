@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "134341781642",
+    "firebase_url": "https://crao-aaedc.firebaseio.com",
+    "project_id": "crao-aaedc",
+    "storage_bucket": "crao-aaedc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:134341781642:android:a5c0c6aef8341a54",
+        "android_client_info": {
+          "package_name": "com.example.chris.crao_final"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "134341781642-3t4t9ng2ek63b0f4c5t3sn1ag1mepfr5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chris.crao_final",
+            "certificate_hash": "60facff2c6ce6a2a9d059d35cbbcc858706bb54e"
+          }
+        },
+        {
+          "client_id": "134341781642-jomjlto2iuohqa2uas5p55s1oudhqcku.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNLLcYAXiwQz0jQiA0-iYQPglA-j0mteo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "134341781642-jomjlto2iuohqa2uas5p55s1oudhqcku.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
