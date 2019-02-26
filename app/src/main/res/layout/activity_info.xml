@@ -58,15 +58,31 @@
     <TextView
         android:id="@+id/textDescripcion"
         android:layout_width="285dp"
-        android:layout_height="170dp"
+        android:layout_height="126dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="TextView"
+        android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textTipo"
-        android:textSize="17sp" />
+        app:layout_constraintTop_toBottomOf="@+id/textTipo" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/transparente"
+        android:onClick="MasInfo"
+        android:text="@string/masInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDescripcion" />
 </android.support.constraint.ConstraintLayout>

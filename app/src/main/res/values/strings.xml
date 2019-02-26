@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CRAO</string>
+    <string name="app_name">PAPEO</string>
     <string name="nombre">Nombre</string>
     <string name="correoElectronico">Correo Electronico</string>
     <string name="apellidos">Apellidos</string>
@@ -15,8 +15,23 @@
     <string name="list_restaurante_crear">Registrar nuevo restaurante</string>
     <string name="list_restaurante_info">Informacion de los restaurantes</string>
     <string name="tipoRestaurante">Tipo de restaurante</string>
-    <string name="descripcionRestaurante">Descripcion del restaurante</string>
+    <string name="descripcionRestaurante">Descripción del restaurante</string>
+    <string name="ubicacionRestaurante">Ubicación del restaurante</string>
+    <string name="telefonoRestaurante">Telefono del restaurante</string>
     <string name="crear">Crear</string>
     <string name="borrarRestaurante">Borrar restaurante</string>
     <string name="Register_error_contraseña">Las contraseñas son diferentes</string>
+    <string name="title_act">Información</string>
+    <string name="title_tlp">Telefono</string>
+    <string name="client_service_tlp">665133149</string>
+    <string name="description_tlp">Telefono para poder reservar</string>
+    <string name="title_email">Correo Electronico</string>
+    <string name="email">christianraulamo24@gmail.com</string>
+    <string name="title_location">Ubicacion del restaurante</string>
+    <string name="location">¿Donde encontrarlo?</string>
+    <string name="client_service">client_service</string>
+    <string name="support">support</string>
+    <string name="support_tlp">support_tlp</string>
+    <string name="description_support">description_support</string>
+    <string name="masInfo">Más Información</string>
 </resources>

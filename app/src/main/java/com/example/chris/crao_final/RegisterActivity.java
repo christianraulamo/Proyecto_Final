@@ -89,7 +89,7 @@ public class RegisterActivity extends AppCompatActivity {
         //
         // Asociamos los filtros
         nom.setFilters(new InputFilter[] { alfaFilter } );
-        ape.setFilters(new InputFilter[] { alfaFilter } );
+        ape.setFilters(new InputFilter[] { alfaFilter });
         //usu.setFilters(new InputFilter[] { alfanumFilter,
         //                                   new InputFilter.LengthFilter(15) } );
 
@@ -117,7 +117,7 @@ public class RegisterActivity extends AppCompatActivity {
                                 if(usuario.isEmpty() || clave.isEmpty() || clave2.isEmpty() || apellido.isEmpty() || nombre.isEmpty()) {
                                     Snackbar.make(v, R.string.login_error_vacio, Snackbar.LENGTH_LONG).show();
 
-                                }else if(clave != clave2){
+                                }else if(!clave.equals(clave2)){
                                     Snackbar.make(v, R.string.Register_error_contraseña, Snackbar.LENGTH_LONG).show();
                                 }else if (task.isSuccessful()) {
                                     // Si, nuestro usuario tiene más información asociada,

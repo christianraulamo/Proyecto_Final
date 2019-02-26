@@ -13,7 +13,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class NewActivity extends AppCompatActivity {
 
-    EditText Nombre, Tipo, descripcion;
+    EditText Nombre, Tipo, descripcion, telefono, ubicacion;
     String foto;
     Button guardar;
 
@@ -29,6 +29,7 @@ public class NewActivity extends AppCompatActivity {
         Nombre = findViewById(R.id.newNameRestaurant) ;
         Tipo = findViewById(R.id.newTipeRestaurant);
         descripcion = findViewById(R.id.newdescriptionRestaurant);
+        telefono = findViewById(R.id.newtelefonoRestaurant);
         foto = "https://firebasestorage.googleapis.com/v0/b/crao-aaedc.appspot.com/o/mammamia.jpg?alt=media&token=34567c2a-d992-476e-91cb-615275a07f98";
 
         guardar = findViewById(R.id.crearRestaurante);
@@ -39,10 +40,12 @@ public class NewActivity extends AppCompatActivity {
                 String  nom = Nombre.getText().toString();
                 String  tip = Tipo.getText().toString();
                 String  des = descripcion.getText().toString();
+                String  ubi = "geo:0,0?q=" + Nombre.getText().toString();
+                String  tel = telefono.getText().toString();
 
                 String id = databaseReference.push().getKey();
 
-                Restaurante rest = new Restaurante(nom, tip, des, foto);
+                Restaurante rest = new Restaurante(nom, tip, des, foto, ubi, tel);
 
                 databaseReference.child("Restaurantes").child(id).setValue(rest);
 

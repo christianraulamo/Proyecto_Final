@@ -92,18 +92,15 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onContextItemSelected(MenuItem item) {
-        //
-// Comprobar qué opción ha elegido el usuario
         switch(item.getItemId()) {
             case R.id.InfoRestaurante:
-
-                // Creamos el usuario
 
                 String nombre = restaurantes.get(adapter.getPosicion()).getNombre();
                 String foto = restaurantes.get(adapter.getPosicion()).getFoto();
                 String descripcion = restaurantes.get(adapter.getPosicion()).getDescripcion();
                 String tipo = restaurantes.get(adapter.getPosicion()).getTipo();
-                //Restaurante restauranteData = dataSnapshot.getValue(Restaurante.class);
+                String ubicacion = restaurantes.get(adapter.getPosicion()).getUbicacion();
+                String telefono = restaurantes.get(adapter.getPosicion()).getTelefono();
 
 
                 Bundle bundle = new Bundle();
@@ -111,6 +108,8 @@ public class MainActivity extends AppCompatActivity {
                 bundle.putSerializable("Foto", foto);
                 bundle.putSerializable("Descripcion", descripcion);
                 bundle.putSerializable("Tipo", tipo);
+                bundle.putSerializable("Ubicacion", ubicacion);
+                bundle.putSerializable("Telefono", telefono);
 
                 Intent intent3 = new Intent(MainActivity.this, InfoActivity.class) ;
                 intent3.putExtras(bundle) ;
@@ -146,7 +145,9 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.listRestauranteExit:
                 Toast.makeText(this, "Sesión cerrada", Toast.LENGTH_SHORT).show();
-                finish();
+                // finish();
+                Intent intent2 = new Intent(MainActivity.this, LoginActivity.class) ;
+                startActivity(intent2) ;
                 break ;
 
             default :
@@ -155,4 +156,8 @@ public class MainActivity extends AppCompatActivity {
 
         return true ;
     }
+
+
+    @Override
+    public void onBackPressed(){}
 }

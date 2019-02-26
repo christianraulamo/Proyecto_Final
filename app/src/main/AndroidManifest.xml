@@ -19,7 +19,8 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".NewActivity" />
-        <activity android:name=".InfoActivity"></activity>
+        <activity android:name=".InfoActivity" />
+        <activity android:name=".InfoMainActivity"></activity>
     </application>
 
 </manifest>

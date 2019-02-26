@@ -25,12 +25,29 @@ public class Restaurante implements Serializable {
     @SerializedName("foto")
     private String foto;
 
+    @Expose
+    @SerializedName("ubicacion")
+    private String ubicacion;
+
+    @Expose
+    @SerializedName("telefono")
+    private String telefono;
+
     public Restaurante() {
     }
 
     public Restaurante(String nombre, String foto) {
         Nombre = nombre;
         this.foto = foto;
+    }
+
+    public Restaurante(String nombre, String tipo, String descripcion, String foto, String ubicacion, String telefono) {
+        Nombre = nombre;
+        Tipo = tipo;
+        this.descripcion = descripcion;
+        this.foto = foto;
+        this.ubicacion = ubicacion;
+        this.telefono = telefono;
     }
 
     public Restaurante(String nombre, String tipo, String descripcion, String foto) {
@@ -47,6 +64,8 @@ public class Restaurante implements Serializable {
                 ", Tipo='" + Tipo + '\'' +
                 ", descripcion='" + descripcion + '\'' +
                 ", foto='" + foto + '\'' +
+                ", ubicacion='" + ubicacion + '\'' +
+                ", telefono='" + telefono + '\'' +
                 '}';
     }
 
@@ -88,5 +107,21 @@ public class Restaurante implements Serializable {
 
     public void setFoto(String foto) {
         this.foto = foto;
+    }
+
+    public String getUbicacion() {
+        return ubicacion;
+    }
+
+    public void setUbicacion(String ubicacion) {
+        this.ubicacion = ubicacion;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
 }

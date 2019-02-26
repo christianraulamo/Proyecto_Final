@@ -8,6 +8,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -37,6 +38,8 @@ public class InfoActivity extends AppCompatActivity {
         String foto = bundle.getString("Foto") ;
         String descripcion = bundle.getString("Descripcion") ;
         String tipo = bundle.getString("Tipo") ;
+        String ubicacion = bundle.getString("Ubicacion") ;
+        String telefono = bundle.getString("Telefono") ;
 
 
         ImageView imageView = (ImageView) findViewById(R.id.fotoInfo);
@@ -51,5 +54,17 @@ public class InfoActivity extends AppCompatActivity {
 
         descripcionInfo = findViewById(R.id.textDescripcion) ;
         descripcionInfo.setText("Descripción:  " + descripcion) ;
+    }
+
+    public void MasInfo(View view) {
+        Bundle bundles = getIntent().getExtras() ;
+        String ubicacion = bundles.getString("Ubicacion") ;
+        String telefono = bundles.getString("Telefono") ;
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("ubicacion", ubicacion);
+        bundle.putSerializable("telefono", telefono);
+        Intent i = new Intent(this, InfoMainActivity.class );
+        i.putExtras(bundle) ;
+        startActivity(i);
     }
 }

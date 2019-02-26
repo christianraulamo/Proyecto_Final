@@ -63,7 +63,10 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void loguearte(View view) {
-        Intent i = new Intent(this, MainActivity.class );
+        Intent i = new Intent(this, InfoMainActivity.class );
         startActivity(i);
     }
+
+    @Override
+    public void onBackPressed(){}
 }
