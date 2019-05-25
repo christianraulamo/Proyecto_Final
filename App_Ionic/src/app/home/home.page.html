@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="Titulo">
+      PAPEO
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="subTitulo"><h1><b>Datos de la Base de datos</b></h1></div>
+  <div class="transparente">a</div>
+  <ion-card>
+    <ion-card-content>
+      <div class="usuario">
+        <h2><b>Nº de usuarios registrados: <b class="numeroUsuario">{{usuarios.length}}</b></b></h2>       
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <div class="restaurante">
+        <h2><b>Nº de restaurantes registrados en la app: <b class="numeroRestaurante">{{restaurantes.length}}</b></b></h2>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <div class="restaurante">
+        <h2><b>Nº de comentarios: <b class="numeroRestaurante">{{comentarios.length}}</b></b></h2>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <canvas #barCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <canvas #barCanvas1></canvas>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <canvas #barCanvas2></canvas>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
