@@ -1,10 +1,9 @@
-package com.example.chris.crao_final;
+package com.example.chris.crao_final.adapters;
 
 
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.MenuInflater;
@@ -13,18 +12,20 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.chris.crao_final.MainActivity;
+import com.example.chris.crao_final.R;
 import com.example.chris.crao_final.modelos.Restaurante;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
 
-public class miAdapter extends RecyclerView.Adapter<miAdapter.RestauranteViewHolder>{
+public class miAdapter extends RecyclerView.Adapter<miAdapter.RestauranteViewHolder> {
 
-    private static Context contexto ;
-    private int layout ;
+    private static Context contexto;
+    private int layout;
     List<Restaurante> restaurantes;
-    private static int posicion ;
+    private static int posicion;
 
 
     public miAdapter(Context contexto, int layout, List<Restaurante> restaurante) {
@@ -38,11 +39,11 @@ public class miAdapter extends RecyclerView.Adapter<miAdapter.RestauranteViewHol
     @Override
     public RestauranteViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
 
-        LayoutInflater inflater = LayoutInflater.from(viewGroup.getContext()) ;
+        LayoutInflater inflater = LayoutInflater.from(viewGroup.getContext());
 
-        View vista = inflater.inflate(this.layout , viewGroup,false) ;
+        View vista = inflater.inflate(this.layout, viewGroup, false);
 
-        RestauranteViewHolder holder = new RestauranteViewHolder(vista) ;
+        RestauranteViewHolder holder = new RestauranteViewHolder(vista);
 
         return holder;
     }
@@ -61,7 +62,7 @@ public class miAdapter extends RecyclerView.Adapter<miAdapter.RestauranteViewHol
         return posicion;
     }
 
-    public static class RestauranteViewHolder extends RecyclerView.ViewHolder implements View.OnCreateContextMenuListener{
+    public static class RestauranteViewHolder extends RecyclerView.ViewHolder implements View.OnCreateContextMenuListener {
 
         private TextView TextViewNombre;
         private ImageView Foto;
@@ -70,14 +71,14 @@ public class miAdapter extends RecyclerView.Adapter<miAdapter.RestauranteViewHol
             super(itemView);
 
             TextViewNombre = itemView.findViewById(R.id.nombreRestaurante);
-            Foto = itemView.findViewById(R.id.restauranteFoto) ;
+            Foto = itemView.findViewById(R.id.restauranteFoto);
 
             itemView.setOnCreateContextMenuListener(this);
 
             itemView.setOnLongClickListener(new View.OnLongClickListener() {
                 @Override
                 public boolean onLongClick(View view) {
-                    posicion = getAdapterPosition() ;
+                    posicion = getAdapterPosition();
                     return false;
                 }
             });
@@ -92,17 +93,16 @@ public class miAdapter extends RecyclerView.Adapter<miAdapter.RestauranteViewHol
                     .load(restaurante.getFoto())
                     .fit()
                     .centerCrop()
-                    .into(Foto) ;
+                    .into(Foto);
         }
 
         @Override
         public void onCreateContextMenu(ContextMenu contextMenu, View v, ContextMenu.ContextMenuInfo menuInfo) {
 
-            MenuInflater inflater = ((MainActivity) contexto).getMenuInflater() ;
-            inflater.inflate(R.menu.list_restaurante_menu2, contextMenu) ;
+            MenuInflater inflater = ((MainActivity) contexto).getMenuInflater();
+            inflater.inflate(R.menu.list_restaurante_menu2, contextMenu);
 
         }
-
 
 
     }

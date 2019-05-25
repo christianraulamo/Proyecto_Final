@@ -3,6 +3,7 @@
     <string name="nombre">Nombre</string>
     <string name="correoElectronico">Correo Electronico</string>
     <string name="apellidos">Apellidos</string>
+    <string name="nombreUsuario">Nombre del usuario</string>
     <string name="contraseña">Contraseña</string>
     <string name="login_error_vacio">Los campos no pueden estar vacios</string>
     <string name="login_error_contraseña">Las contraseñas no coinciden</string>
@@ -34,4 +35,5 @@
     <string name="support_tlp">support_tlp</string>
     <string name="description_support">description_support</string>
     <string name="masInfo">Más Información</string>
+    <string name="comentario">Comentarios</string>
 </resources>

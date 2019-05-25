@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ComentActivity"
+    android:background="@drawable/fondodegradado">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:autoLink="none"
+        android:text="@string/comentario"
+        android:textAllCaps="true"
+        android:textColor="@color/blanco"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="60dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/transparente"
+        android:onClick="goBack"
+        android:tint="@color/blanco"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="396dp"
+        android:layout_height="637dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/puntuacion1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:background="@color/transparente"
+                android:onClick="changeStar1"
+                app:srcCompat="@drawable/btn_star_big_off_pressed"
+                tools:layout_editor_absoluteX="338dp"
+                tools:layout_editor_absoluteY="13dp" />
+
+            <ImageButton
+                android:id="@+id/puntuacion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparente"
+                android:onClick="changeStar2"
+                app:srcCompat="@drawable/btn_star_big_off_pressed"
+                tools:layout_editor_absoluteX="338dp"
+                tools:layout_editor_absoluteY="13dp" />
+
+            <ImageButton
+                android:id="@+id/puntuacion3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparente"
+                android:onClick="changeStar3"
+                app:srcCompat="@drawable/btn_star_big_off_pressed"
+                tools:layout_editor_absoluteX="338dp"
+                tools:layout_editor_absoluteY="13dp" />
+
+            <ImageButton
+                android:id="@+id/puntuacion4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparente"
+                android:onClick="changeStar4"
+                app:srcCompat="@drawable/btn_star_big_off_pressed"
+                tools:layout_editor_absoluteX="338dp"
+                tools:layout_editor_absoluteY="13dp" />
+
+            <ImageButton
+                android:id="@+id/puntuacion5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparente"
+                android:onClick="changeStar5"
+                app:srcCompat="@drawable/btn_star_big_off_pressed"
+                tools:layout_editor_absoluteX="338dp"
+                tools:layout_editor_absoluteY="13dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/precioMedio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:ems="15"
+            android:hint="Coste de la comida por persona:"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textColor="@color/blanco"
+            android:textColorHint="@color/blanco"
+            android:theme="@style/editText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/puntuacion" />
+
+
+        <EditText
+            android:id="@+id/comentario"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:ems="10"
+            android:hint="Comentario:"
+            android:inputType="textPersonName"
+            android:textColor="@color/blanco"
+            android:textColorHint="@color/blanco"
+            android:theme="@style/editText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/puntuacion" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="395dp"
+            android:layout_height="474dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/comentario"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="MissingConstraints" />
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="356dp"
+        android:layout_marginLeft="356dp"
+        android:layout_marginTop="180dp"
+        android:clickable="true"
+        android:onClick="añadirComent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+</android.support.constraint.ConstraintLayout>

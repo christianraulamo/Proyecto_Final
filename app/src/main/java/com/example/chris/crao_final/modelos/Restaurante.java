@@ -7,6 +7,8 @@ import java.io.Serializable;
 
 public class Restaurante implements Serializable {
 
+    @Expose
+    @SerializedName("IdRestaurante")
     private String IdRestaurante;
 
     @Expose
@@ -33,6 +35,10 @@ public class Restaurante implements Serializable {
     @SerializedName("telefono")
     private String telefono;
 
+    @Expose
+    @SerializedName("Precio")
+    private String Precio;
+
     public Restaurante() {
     }
 
@@ -41,13 +47,14 @@ public class Restaurante implements Serializable {
         this.foto = foto;
     }
 
-    public Restaurante(String nombre, String tipo, String descripcion, String foto, String ubicacion, String telefono) {
+    public Restaurante(String nombre, String tipo, String descripcion, String foto, String ubicacion, String telefono, String precio) {
         Nombre = nombre;
         Tipo = tipo;
         this.descripcion = descripcion;
         this.foto = foto;
         this.ubicacion = ubicacion;
         this.telefono = telefono;
+        this.Precio = precio;
     }
 
     public Restaurante(String nombre, String tipo, String descripcion, String foto) {
@@ -66,6 +73,7 @@ public class Restaurante implements Serializable {
                 ", foto='" + foto + '\'' +
                 ", ubicacion='" + ubicacion + '\'' +
                 ", telefono='" + telefono + '\'' +
+                ", Precio='" + Precio + '\'' +
                 '}';
     }
 
@@ -123,5 +131,13 @@ public class Restaurante implements Serializable {
 
     public void setTelefono(String telefono) {
         this.telefono = telefono;
+    }
+
+    public String getPrecio() {
+        return Precio;
+    }
+
+    public void setPrecio(String precio) {
+        Precio = precio;
     }
 }

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="240dp">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="402dp"
+        android:layout_height="222dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/nombreUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="nombre del usuario"
+            android:textColor="@color/blanco"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/puntuacion"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="225sp"
+            android:layout_marginTop="-30dp"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:text="puntuacion"
+            android:textColor="@color/blanco"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/precioMedio"
+            android:layout_width="298dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Coste de la comida:"
+            android:textColor="@color/blanco"
+            android:textSize="24sp" />
+
+
+        <TextView
+            android:id="@+id/comentario"
+            android:layout_width="395dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:text="comentario"
+            android:textColor="@color/blanco"
+            android:textSize="24sp" />
+
+        <View style="@style/redesign_linea_horizontal_no_margin" />
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

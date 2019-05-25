@@ -6,6 +6,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.EditText;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -16,10 +17,9 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private EditText usr, pwd ;
+    private EditText usr, pwd;
 
     private FirebaseAuth mAuth;
-    private FirebaseDatabase fbDB ;
 
 
     @Override
@@ -27,46 +27,64 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        mAuth = FirebaseAuth.getInstance() ;
+        mAuth = FirebaseAuth.getInstance();
+
+        //Ocultar el teclado
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
+
+        getSupportActionBar().hide();
+
 
     }
 
-    public void acercade(View view) {
-        Intent i = new Intent(this, RegisterActivity.class );
+    //Ir a la actividad RegisterActivity
+    public void goToRegister(View view) {
+        Intent i = new Intent(this, RegisterActivity.class);
         startActivity(i);
     }
 
-    public void loguea(final View v) {
+    public void login(final View v) {
+
+        //Obtener datos de los editText
         usr = findViewById(R.id.loginUser);
         pwd = findViewById(R.id.loginPassword);
 
+        //Transformar los datos de los editText a String y sin espacios
         String usuario = usr.getText().toString().trim();
         String clave = pwd.getText().toString().trim();
 
-        if (usuario.isEmpty() || clave.isEmpty()){
+        //Comprobación de que los campos no esten vacios
+        if (usuario.isEmpty() || clave.isEmpty()) {
             Snackbar.make(v, R.string.login_error_vacio, Snackbar.LENGTH_LONG).show();
 
-        }else {
-            mAuth.signInWithEmailAndPassword(usuario,clave).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+        } else {
+            //Comprobar que el correo exista en la base de datos y que coincida la contraseña
+            mAuth.signInWithEmailAndPassword(usuario, clave).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
 
-                        Intent intent = new Intent(LoginActivity.this, MainActivity.class) ;
-                        startActivity(intent) ;
+                        String Email = usr.getText().toString().trim();
+
+                        //Enviar el correo que se ha introducido a la actividad MainActivity
+                        Bundle bundle = new Bundle();
+                        bundle.putSerializable("Email", Email);
+
+                        //Ir a la actividad MainActivity
+                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                        intent.putExtras(bundle);
+                        startActivity(intent);
                     } else {
                         Snackbar.make(v, R.string.login_error, Snackbar.LENGTH_LONG).show();
                     }
                 }
-            }) ;
+            });
         }
     }
 
-    public void loguearte(View view) {
-        Intent i = new Intent(this, InfoMainActivity.class );
-        startActivity(i);
+    //Bloquear poder volver a actividad anterior
+    @Override
+    public void onBackPressed() {
     }
 
-    @Override
-    public void onBackPressed(){}
 }

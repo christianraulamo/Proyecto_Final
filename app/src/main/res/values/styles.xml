@@ -1,11 +1,27 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/fondo</item>
+        <item name="colorPrimaryDark">@color/fondo</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="editText" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorControlNormal">#FFFFFF</item>
+        <item name="colorControlActivated">#FFFFFF</item>
+        <item name="android:textColorHighlight">#FFFFFF</item>
+    </style>
+
+    <style name="redesign_linea_horizontal_no_margin">
+        <item name="android:color">@color/gris_claro</item>
+        <item name="android:background">@color/gris_claro</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
     </style>
 
 </resources>

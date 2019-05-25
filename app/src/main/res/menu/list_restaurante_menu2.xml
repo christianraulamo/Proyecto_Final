@@ -7,9 +7,4 @@
         android:title="@string/list_restaurante_info"
         app:showAsAction="never" />
 
-    <item
-        android:id="@+id/BorrarRestaurante"
-        android:title="@string/borrarRestaurante"
-        app:showAsAction="never" />
-
 </menu>

@@ -2,6 +2,14 @@
 <resources>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorAccent">#00D81B60</color>
     <color name="transparente">#00ffffff</color>
+    <color name="fondoInicio">#1B4353</color>
+    <color name="fondo">#3066BE</color>
+    <color name="grisClaro">#9E9D9D</color>
+    <color name="verdeClaro">#45D64C</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="verde">#2ABEAA</color>
+    <color name="amarillo">#f4f7be</color>
+    <color name="gris_claro">#C4C2C2</color>
 </resources>
