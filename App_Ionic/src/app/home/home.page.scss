@@ -1,6 +1,6 @@
  .restaurante{
-     color: black;
-     font-style: italic;
+    color: black;
+    font-style: italic;
  }
 
  .usuario {
@@ -9,9 +9,9 @@
  }
 
  .subTitulo {
-     text-align: center;
-     text-decoration: underline;
-     text-decoration-color: black;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: black;
  }
 
  .Titulo {
@@ -21,3 +21,31 @@
  .transparente {
      color: white;
  }
+
+ .item1 { grid-area: item1; }
+ .item2 { grid-area: item2; }
+ .item3 { grid-area: item3; }
+ .item4 { grid-area: item4; }
+ .item5 { grid-area: item5; }
+ .item6 { grid-area: item6; }
+ .item7 { grid-area: item7; }
+
+ .grid-container {
+    display: grid;
+    grid-template-areas:
+      'item1 item1 item1 item1 item1 item1'
+      'item2 item2 item3 item3 item4 item4'
+      'item5 item5 item5 item5 item5 item5'
+      'item6 item6 item6 item6 item6 item6'
+      'item7 item7 item7 item7 item7 item7';
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
