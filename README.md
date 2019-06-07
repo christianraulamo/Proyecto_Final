@@ -1,3 +1,3 @@
 # PAPEO
 
-<img src="Capturas/Loguin.png" width="600px">
+<img src="Capturas/Loguin.png" width="200px">
