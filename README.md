@@ -22,4 +22,4 @@
 <img src="Capturas/Modificar Perfil.png" width="200px">
 
 ## Estadisticas
-<img src="Capturas/Estadisticas.PNG" width="300px">
+<img src="Capturas/Estadisticas.PNG" width="500px">
