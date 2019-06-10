@@ -3,7 +3,7 @@
 ## Herramientas
 
 |      Hora     |  Curso |               Nombre                   |  Empresa          |
-|:-------------:|:------:|:--------------------------------------:|:-----------------:|
+|:-------------|:------:|:--------------------------------------:|-----------------:|
 | 09:00 - 09:20 | 2º DAM | García Ruiz, Cintia                    | Properly          |
 | 09:20 - 09:40 | 2º DAW | Caballero Molina, Francisco Jesús      | Freepik           |
 | 09:40 - 10:00 | 2º DAW | Sánchez, Adrián                        | BeSoccer          |
