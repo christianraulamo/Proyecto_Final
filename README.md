@@ -2,9 +2,8 @@
 
 ## Herramientas
 
-|      Hora     |  Curso |               Nombre                   |
+|      Android     |  Ionic |               Chart.js                  |
 |:-------------|:------:|--------------------------------------:|
-| 09:00 - 09:20 | 2º DAM | García Ruiz, Cintia                    |
 <img src="Capturas/Android Logo.png" width="200px"> | <img src="Capturas/Ionic Logo.png" width="200px"> | <img src="Capturas/chartjs Logo.png" width="200px"> 
 
 ## Loguin
