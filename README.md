@@ -1,5 +1,8 @@
 # PAPEO
 
+## Herramientas
+<img src="Capturas/Android Logo.png" width="200px"> <img src="Capturas/Ionic Logo.png" width="200px">
+
 ## Loguin
 <img src="Capturas/Loguin.png" width="200px">
 
