@@ -2,13 +2,9 @@
 
 ## Herramientas
 
-|      Hora     |  Curso |               Nombre                   |  Empresa          |
+|      Hora     |  Curso |               Nombre                   |
 |:-------------|:------:|:--------------------------------------:|-----------------:|
-| 09:00 - 09:20 | 2º DAM | García Ruiz, Cintia                    | Properly          |
-| 09:20 - 09:40 | 2º DAW | Caballero Molina, Francisco Jesús      | Freepik           |
-| 09:40 - 10:00 | 2º DAW | Sánchez, Adrián                        | BeSoccer          |
-| 10:00 - 10:20 | 2º DAW | Villalba Sánchez, Adrián               | ITRS              |
-| 10:20 - 10:40 | 2º DAW | Campos Jurado, Rafael                  | BCS               |
+| 09:00 - 09:20 | 2º DAM | García Ruiz, Cintia                    | 
 <img src="Capturas/Android Logo.png" width="200px"> | <img src="Capturas/Ionic Logo.png" width="200px"> | <img src="Capturas/chartjs Logo.png" width="200px"> 
 
 ## Loguin
