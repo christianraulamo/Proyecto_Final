@@ -1,7 +1,7 @@
 # PAPEO
 
 ## Loguin
-<img src="Capturas/Loguin.png" width="200px"><img src="Capturas/Registro.png" width="200px">
+<img src="Capturas/Loguin.png" width="200px"> <img src="Capturas/Registro.png" width="200px">
 
 ## Lista de restaurantes
 <img src="Capturas/Registro.png" width="200px">
